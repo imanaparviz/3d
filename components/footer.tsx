@@ -22,12 +22,12 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Rechte Spalte */}
+        {/* Rechte Spalte 
         <div className="flex flex-col items-end">
           <a href="/login" className="text-base hover:underline">Login</a>
           <a href="/about" className="mt-5 text-base hover:underline">About</a>
          
-        </div>
+        </div>*/}
 
       </div>
 
