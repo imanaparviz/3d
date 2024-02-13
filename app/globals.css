@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes flickerAlternating {
+    0%, 12.5% { opacity: 1; filter: brightness(100%); }
+    12.5%, 25% { opacity: 1; filter: brightness(400%); }  
+    25%, 50% { opacity: 1; filter: brightness(100%); }    
+    50%, 62.5% { opacity: 1; filter: brightness(150%); }  
+    62.5%, 100% { opacity: 1; filter: brightness(100%); } 
+  }
+   
+    .custom-scrollbar{
+     
+    }
+  .flicker-effect:hover {
+    animation: flickerAlternating 1.5s infinite;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 12px;
+    /* Breite der Scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: linear-gradient(45deg, #6dd5ed00, #2193b000); /* Verlaufshintergrund für die Scrollbar-Bahn */
+    border-radius: 10px; /* Abgerundete Ecken für die Scrollbar-Bahn */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  box-shadow: inset 3px 0px 5px rgba(0, 39, 74, 0.733); 
+
+    background: linear-gradient(45deg, #00b5f1, #003eb1); /* Verlaufshintergrund für die Scrollbar */
+    border-radius: 10px; /* Abgerundete Ecken für die Scrollbar */
+    border: 2px solid #00e8e0; /* Weißer Rand für die Scrollbar */
+    transition: background 0.3s, box-shadow 0.3s; /* Sanfter Übergang für Hintergrund und Schatten */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #00f8ad, #56f9db); /* Hellere Verlaufshintergrund für die Scrollbar beim Hover */
+    box-shadow: inset 3px 0px 5px rgba(0, 0, 0, 0.5);
+}
+/* page.module.css */
+.image-above-footer {
+  margin-bottom: 50%; /* oder ein anderer Wert, der für Ihr Layout passt */
+}
+/* Responsive Stile für Tablets */
+@media (max-width: 768px) {
+  .text-container {
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+}
+
+/* Responsive Stile für Handys */
+@media (max-width: 480px) {
+  .text-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

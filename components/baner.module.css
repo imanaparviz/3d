@@ -1,0 +1,35 @@
+.banner {
+  position: relative;
+  width: 100%; /* Adjust if you want a specific width for your banner */
+  height: 100vh; /* This should be the height of your banner */
+  overflow: hidden; /* To prevent any part of the images from spilling out */
+}
+
+.imageContainer {
+  width: 50%; /* Each image container takes up half the width of the banner */
+  height: 100vh; /* Full height of the banner container */
+  position: absolute;
+  overflow: hidden; /* Ensures that any part of the image that extends beyond the container is not shown */
+}
+
+.imageContainer:first-child {
+  left: 0;
+  background: url('/original.jpg') no-repeat center; /* Adjust path to your image */
+  background-size: cover; /* Ensure the image covers the full container */
+}
+
+.imageContainer:last-child {
+  right: 0;
+  background: url('/cartoon.jpg') no-repeat center; /* Adjust path to your image */
+  background-size: cover; /* Ensure the image covers the full container */
+}
+
+.bannerText {
+  position: absolute;
+  z-index: 10; /* Ensures text is on top */
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

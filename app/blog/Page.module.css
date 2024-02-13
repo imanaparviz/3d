@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.box {
+  width: 100px; /* 50% der Viewport-Breite */
+  height: 150px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  position: absolute;
+  
+ /* Inhalt nach links ausrichten */
+}
+
+.box1 {
+  left: 0; /* Startet am linken Rand */
+}
+
+.box2 {
+  right: 0; /* Startet am rechten Rand */
+}
+
+.leftImage {
+  object-fit: none;
+  width: 50vw; /* Die Breite des Bildes beibehalten */
+  height: 100%; /* An die Höhe der Box anpassen */
+}
+.rightImage {
+  object-fit: none;
+  width: 50vw; /* Die Breite des Bildes beibehalten */
+  height: 100%; /* An die Höhe der Box anpassen */
+}
