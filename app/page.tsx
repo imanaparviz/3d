@@ -1,3 +1,4 @@
+import React from "react"; // Add this line
 import Link from "next/link";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -36,7 +37,7 @@ function Home() {
             <p className="mt-10 custom-scrollbar h32 text-lg text-red-100 overflow-y-auto h-32 pr-5 custom-scrollbar w-80">
               In der Ära der digitalen Renaissance befindet sich das Berufsfeld
               der Entwickler an der Schwelle zu einem neuen Zeitalter – dem des
-              Futures Design. Die "Futures Design Developers" sind nicht mehr
+              Futures Design. Die &quot;Futures Design Developers&quot; sind nicht mehr
               nur Architekten von Code, sondern werden zu Visionären, die die
               Zukunft gestalten. Sie weben das Gewebe der digitalen Welten, in
               denen wir zunehmend leben, arbeiten und spielen. Futures Design
